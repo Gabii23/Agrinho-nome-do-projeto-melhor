@@ -1,2 +1,3 @@
-# Agrinho-nome-do-projeto-melhor
-pipipipii
+# Tema do meu projeto
+
+Projeto desenvolvido para o concurso Agrinho.
