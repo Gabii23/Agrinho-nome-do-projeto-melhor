@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colégio Curioso</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#ideias">Ideias</a>
+      <a href="#missao">Missão</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-conteudo">
+        <p class="etiqueta">Projeto Front-End autoral</p>
+        <h1>Colégio Curioso</h1>
+        <p class="subtitulo">
+          Um site criativo sobre escola, imaginação e pequenas descobertas do dia a dia.
+        </p>
+        <a class="botao-principal" href="#missao">Gerar missão criativa</a>
+      </div>
+
+      <div class="pixel-area" aria-label="Pixel art decorativa de um estudante">
+        <div class="pixel-personagem">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span class="pele"></span><span class="pele"></span><span class="pele"></span><span></span>
+          <span class="cabelo"></span><span class="pele olho"></span><span class="pele"></span><span class="pele olho"></span><span class="cabelo"></span>
+          <span></span><span class="blusa"></span><span class="blusa"></span><span class="blusa"></span><span></span>
+          <span></span><span class="calca"></span><span></span><span class="calca"></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="ideias">
+      <p class="etiqueta">Vida escolar com outro olhar</p>
+      <h2>Ideias para observar no colégio</h2>
+
+      <div class="grade-cards">
+        <article class="card">
+          <h3>Mapas secretos</h3>
+          <p>Imagine que cada corredor tem uma história. Que lugares da escola parecem esconder memórias?</p>
+        </article>
+
+        <article class="card">
+          <h3>Objetos com personalidade</h3>
+          <p>Se uma mochila, um quadro ou uma carteira pudesse falar, o que ela contaria?</p>
+        </article>
+
+        <article class="card">
+          <h3>Logotipos inventados</h3>
+          <p>Crie símbolos em pixel art para representar salas, matérias, clubes ou momentos da escola.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao missao" id="missao">
+      <div>
+        <p class="etiqueta">Interação em JavaScript</p>
+        <h2>Gerador de missão criativa</h2>
+        <p>
+          Clique no botão para receber uma proposta diferente. A ideia é transformar o cotidiano escolar em criação.
+        </p>
+      </div>
+
+      <div class="painel-missao" aria-live="polite">
+        <p id="textoMissao">Clique para descobrir sua primeira missão.</p>
+        <button id="botaoMissao" type="button">Gerar missão</button>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre">
+      <p class="etiqueta">Autoria e ética</p>
+      <h2>Sobre o projeto</h2>
+      <p class="texto-largo">
+        Este site foi criado como um projeto autoral de Front-End, usando HTML semântico,
+        CSS organizado, JavaScript interativo e cuidados de acessibilidade. A proposta valoriza
+        criatividade, identidade visual e observação do ambiente escolar.
+      </p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por Gabrieli — Projeto Start by Alura</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

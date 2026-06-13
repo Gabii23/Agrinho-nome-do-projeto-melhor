@@ -1,0 +1,251 @@
+:root {
+  --cor-fundo-escura: #15353b;
+  --cor-azul-claro: #71b4e3;
+  --cor-verde: #317672;
+  --cor-texto: #f7fbff;
+  --cor-texto-suave: #d8edf5;
+  --cor-card: rgba(255, 255, 255, 0.13);
+  --cor-borda: rgba(255, 255, 255, 0.28);
+  --cor-destaque: #ffe66d;
+  --fonte-titulo: "Space Grotesk", sans-serif;
+  --fonte-texto: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background: hsla(189, 48%, 16%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(189, 48%, 16%, 1) 0%,
+    hsla(205, 67%, 67%, 1) 50%,
+    hsla(178, 42%, 33%, 1) 100%
+  );
+  background-attachment: fixed;
+}
+
+.cabecalho {
+  width: 100%;
+  padding: 24px 8%;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: rgba(255, 255, 255, 0.16);
+  outline: 2px solid transparent;
+}
+
+.hero {
+  min-height: 78vh;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 8%;
+}
+
+.hero-conteudo {
+  max-width: 720px;
+}
+
+.etiqueta {
+  color: var(--cor-destaque);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-size: 0.85rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(3rem, 9vw, 7rem);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+}
+
+.subtitulo,
+.texto-largo,
+.secao p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--cor-texto-suave);
+}
+
+.botao-principal,
+button {
+  display: inline-block;
+  margin-top: 28px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--cor-destaque);
+  color: #173036;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 14px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao-principal:hover,
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+}
+
+.secao {
+  padding: 72px 8%;
+}
+
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card,
+.painel-missao {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.card p {
+  color: var(--cor-texto-suave);
+}
+
+.missao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.painel-missao {
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#textoMissao {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--cor-texto);
+}
+
+.pixel-area {
+  display: flex;
+  justify-content: center;
+}
+
+.pixel-personagem {
+  display: grid;
+  grid-template-columns: repeat(5, 32px);
+  grid-template-rows: repeat(5, 32px);
+  gap: 4px;
+  image-rendering: pixelated;
+  padding: 24px;
+}
+
+.pixel-personagem span {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+}
+
+.pixel-personagem .pele {
+  background-color: #ffd2a6;
+}
+
+.pixel-personagem .cabelo {
+  background-color: #2b1d18;
+}
+
+.pixel-personagem .olho {
+  box-shadow: inset 10px 10px #1d2b36;
+}
+
+.pixel-personagem .blusa {
+  background-color: #ffe66d;
+}
+
+.pixel-personagem .calca {
+  background-color: #263a8b;
+}
+
+.rodape {
+  padding: 32px 8%;
+  text-align: center;
+  color: var(--cor-texto-suave);
+}
+
+@media (max-width: 800px) {
+  .hero,
+  .missao {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pixel-area {
+    order: -1;
+  }
+
+  .pixel-personagem {
+    grid-template-columns: repeat(5, 24px);
+    grid-template-rows: repeat(5, 24px);
+  }
+
+  .pixel-personagem span {
+    width: 24px;
+    height: 24px;
+  }
+}
