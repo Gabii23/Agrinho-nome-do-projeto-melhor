@@ -1,4 +1,4 @@
-# Projeto Front-End Colégio Curioso
+
 
 Projeto desenvolvido para o concurso Agrinho.
 # Colégio Curioso
