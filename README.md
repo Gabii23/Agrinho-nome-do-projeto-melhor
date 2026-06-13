@@ -1,6 +1,6 @@
 
 
-Projeto desenvolvido para o concurso Agrinho.
+
 # Colégio Curioso
 
 Projeto Front-End autoral desenvolvido para a unidade Start by Alura.
